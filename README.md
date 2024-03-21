@@ -68,7 +68,7 @@ I was also able to refresh memory on how to automatically change images based on
 
 ### Continued development
 
-I tried 2 ways of using the CSS grid layout: 1. gid-template-areas and 2. gird-template-cplumns.  Unfortunately I struggled a lot with utilizing the gird-template-areas, so I had to abandon it and use the grid-template-colums format which was quite straight forward and easy to understand to me. 
+I tried 2 ways of using the CSS grid layout: 1. gid-template-areas and 2. grid-template-columns.  Unfortunately I struggled a lot with utilizing grid-template-areas, so I had to abandon it and use the grid-template-colums format which was quite straight forward and simple in my opinion. 
 
 That being said, I would like to improve and develop more on the use of the various CSS layout methods whether it's flexbox, grid, or any other type. I would also like to develop and perfect my skills on web responsiveness.
 
