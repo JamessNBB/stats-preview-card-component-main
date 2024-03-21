@@ -16,7 +16,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,84 +26,64 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
+![Desktop-view](screenshots/desktop-view.png)
 
-![](./screenshot.jpg)
+![Mobile-view](screenshots/mobile-view.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/JamessNBB/stats-preview-card-component-main.git)
+- Live Site URL: [Live site](https://jamessnbb.github.io/stats-preview-card-component-main/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- HTML5
+- CSS
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I was able to refresh and refine my understanding of CSS grid layout. I recently learned font shorthand, so I was able to practice and apply it in this project, see extract below:
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#paragraph-main {
+  font: 400 15px/1.66 'Inter';
+  color: var(--slightly-transparent-white-main-paragraph);
+  margin: 1.65rem 0 4.45rem 0;
+  max-width: 350px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+I was also able to refresh memory on how to automatically change images based on screen size using media query.
+```html
+<div class="image-area">
+        <picture>
+          <source srcset="images/image-header-mobile.jpg" media="(max-width:1021px)">
+          <img src="images/image-header-desktop.jpg" alt="">
+          <div class="overlay"></div>
+        </picture>
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I tried 2 ways of using the CSS grid layout: 1. gid-template-areas and 2. gird-template-cplumns.  Unfortunately I struggled a lot with utilizing the gird-template-areas, so I had to abandon it and use the grid-template-colums format which was quite straight forward and easy to understand to me. 
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+That being said, I would like to improve and develop more on the use of the various CSS layout methods whether it's flexbox, grid, or any other type. I would also like to develop and perfect my skills on web responsiveness.
+
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+[W3Schools](https://www.w3schools.com/) - Excellent place to get you started on your programming journey. It helped me understand some basic HTML elements and CSS properties.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- GitHub - [James](https://github.com/JamessNBB)
+- Frontend Mentor - [@JamessNBB](https://www.frontendmentor.io/profile/JamessNBB)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I was able to complete this project by myself, but I want to appreciate [Frontend Mentor](https://www.frontendmentor.io) for giving the opportunity to improve my coding skills by doing challenges such as this.
